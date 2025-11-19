@@ -1,0 +1,36 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+    width: 100%;
+    /*max-width: 100vw;*/
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+#getUnlimitedAccess {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 24px 0;
+    word-break: break-word;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.bottom-links a {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.2;
+}

@@ -1,0 +1,151 @@
+.access-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.access-buttons-container input {
+    display: none;
+}
+
+#yearly-access-btn {
+    position: relative;
+    width: 342px;
+    height: 71px;
+    cursor: pointer;
+    display: block;
+}
+#yearly-access-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#weekly-access-btn {
+    position: relative;
+    width: 342px;
+    height: 56px;
+    cursor: pointer;
+    display: block;
+}
+#weekly-access-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.access-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.yearly-btn-text-container {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    pointer-events: none;
+}
+
+.yearly-btn-text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+}
+
+.btn-text-left-title {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-text-left-subtitle {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+}
+
+.yearly-btn-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 87px;
+    margin-top: 4px;
+    color: #dadada;
+}
+
+.weekly-btn-text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    pointer-events: none;
+}
+
+.weekly-btn-text-left {
+    margin-top: 11px;
+}
+
+.weekly-btn-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 87px;
+    color: #dadada;
+}
+
+
+#yearlyAccess:checked + label img {
+    content: url("../../static/buttons/yearlyAccessActive.svg");
+}
+
+#weeklyAccess:checked + label img {
+    content: url("../../static/buttons/weeklyAccessActive.svg");
+}
+
+#continue-btn {
+    width: 342px;
+    height: 56px;
+    border-radius: 100px;
+    border: none;
+    background-color: #ffffff;
+    color: #070B33;
+    font-family: 'SF Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.3s ease;
+}
+
+#continue-btn:active {
+    opacity: 0.7;
+}

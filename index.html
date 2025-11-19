@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/background/background.css">
+    <link rel="stylesheet" href="css/content/content.css">
+    <link rel="stylesheet" href="css/content/offers.css">
+    <link rel="stylesheet" href="css/content/access.css">
+
+</head>
+<body>
+ <div class="background-container">
+     <div class="main-background">
+         <div id="content">
+             <h1 id="getUnlimitedAccess">Get Unlimited Access</h1>
+
+             <div class="offers-container">
+                 <div class="offer-item">
+                     <img src="static/backgrounds/unlimitedArtCreation.svg" alt="Неограниченное творчество"/>
+                     <span class="offer-label-item">Unlimited Art Creation</span>
+                 </div>
+                 <div class="offer-item">
+                     <img src="static/backgrounds/exclusiveStyles.svg" alt="Эксклюзивные стили"/>
+                     <span class="offer-label-item">Exclusive Styles</span>
+                 </div>
+                 <div class="offer-item">
+                     <img src="static/backgrounds/magicAvatars.svg" alt="Магические аватары"/>
+                     <span class="offer-label-item">Magic Avatars With 20% Off</span>
+                 </div>
+             </div>
+
+             <div class="access-buttons-container">
+                 <input type="radio" name="choose" id="yearlyAccess" checked>
+                 <label id="yearly-access-btn" for="yearlyAccess">
+                     <img src="static/buttons/yearlyAccessInActive.svg" alt="Выбор 1">
+                     <div class="yearly-btn-text-container">
+                         <div class="yearly-btn-text-left">
+                             <span class="btn-text-left-title">YEARLY ACCESS</span>
+                             <span class="btn-text-left-subtitle">Just $39.99 per year</span>
+                         </div>
+                         <div class="yearly-btn-text-right">
+                             <span>$0.48</span>
+                             <span>per week</span>
+                         </div>
+                     </div>
+                 </label>
+
+                 <input type="radio" name="choose" id="weeklyAccess">
+                 <label id="weekly-access-btn" for="weeklyAccess">
+                     <img src="static/buttons/weeklyAccessInActive.svg" alt="Выбор 2">
+                     <div class="weekly-btn-text-container">
+                         <span class="weekly-btn-text-left">WEEKLY ACCESS</span>
+                         <div class="weekly-btn-text-right">
+                             <span>$6.99</span>
+                             <span>per week</span>
+                         </div>
+                     </div>
+                 </label>
+
+                 <button id="continue-btn">Continue</button>
+             </div>
+
+             <div class="bottom-links">
+                 <a href="#">Terms of Use</a>
+                 <a href="#">Privacy Policy</a>
+                 <a href="#">Restore</a>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <script src="js/actionContinue.js"></script>
+</body>
+</html>
