@@ -7,72 +7,80 @@
 
     <link rel="stylesheet" href="css/main/main.css">
     <link rel="stylesheet" href="css/background/background.css">
+    <link rel="stylesheet" href="css/content/closeButton.css">
     <link rel="stylesheet" href="css/content/content.css">
     <link rel="stylesheet" href="css/content/offers.css">
     <link rel="stylesheet" href="css/content/access.css">
+    <link rel="stylesheet" href="css/content/accessSelection.css">
 
 </head>
 <body>
  <div class="background-container">
      <div class="main-background">
-         <div id="content">
-             <h1 id="getUnlimitedAccess">Get Unlimited Access</h1>
+         <a href="#" class="close-btn">
+             <img src="static/buttons/cross.svg" alt="Close">
+         </a>
+         <div class="content">
+             <h1 id="getUnlimitedAccess" data-i18n="Get Unlimited <br>Access"></h1>
 
              <div class="offers-container">
                  <div class="offer-item">
-                     <img src="static/backgrounds/unlimitedArtCreation.svg" alt="Неограниченное творчество"/>
-                     <span class="offer-label-item">Unlimited Art Creation</span>
+                     <img src="static/backgrounds/unlimitedArtCreation.svg" alt="Unlimited Art Creation"/>
+                     <span class="offer-label-item" data-i18n="Unlimited Art <br>Creation"></span>
                  </div>
                  <div class="offer-item">
-                     <img src="static/backgrounds/exclusiveStyles.svg" alt="Эксклюзивные стили"/>
-                     <span class="offer-label-item">Exclusive Styles</span>
+                     <img src="static/backgrounds/exclusiveStyles.svg" alt="Exclusive Styles"/>
+                     <span class="offer-label-item" data-i18n="Exclusive <br>Styles"></span>
                  </div>
                  <div class="offer-item">
-                     <img src="static/backgrounds/magicAvatars.svg" alt="Магические аватары"/>
-                     <span class="offer-label-item">Magic Avatars With 20% Off</span>
+                     <img src="static/backgrounds/magicAvatars.svg" alt="Magic Avatars"/>
+                     <span class="offer-label-item" data-i18n="Magic Avatars <br>With 20% Off"></span>
                  </div>
              </div>
 
              <div class="access-buttons-container">
                  <input type="radio" name="choose" id="yearlyAccess" checked>
                  <label id="yearly-access-btn" for="yearlyAccess">
-                     <img src="static/buttons/yearlyAccessInActive.svg" alt="Выбор 1">
+                     <img src="static/buttons/yearlyAccessInActive.svg" alt="Yearly access button">
                      <div class="yearly-btn-text-container">
                          <div class="yearly-btn-text-left">
-                             <span class="btn-text-left-title">YEARLY ACCESS</span>
-                             <span class="btn-text-left-subtitle">Just $39.99 per year</span>
+                             <span class="btn-text-left-title" data-i18n="YEARLY ACCESS"></span>
+                             <span class="btn-text-left-subtitle" data-i18n="Just {{price}} per year"></span>
                          </div>
                          <div class="yearly-btn-text-right">
-                             <span>$0.48</span>
-                             <span>per week</span>
+                             <div class="best-offer-container">
+                                 <span class="best-offer" data-i18n="BEST OFFER"></span>
+                             </div>
+                             <span class="btn-text-price-per-week" data-i18n="{{price}} <br>per week"></span>
                          </div>
+
                      </div>
                  </label>
 
                  <input type="radio" name="choose" id="weeklyAccess">
                  <label id="weekly-access-btn" for="weeklyAccess">
-                     <img src="static/buttons/weeklyAccessInActive.svg" alt="Выбор 2">
+                     <img src="static/buttons/weeklyAccessInActive.svg" alt="Weekly access inactive">
                      <div class="weekly-btn-text-container">
-                         <span class="weekly-btn-text-left">WEEKLY ACCESS</span>
-                         <div class="weekly-btn-text-right">
-                             <span>$6.99</span>
-                             <span>per week</span>
-                         </div>
+                         <span class="weekly-btn-text-left" data-i18n="WEEKLY ACCESS"></span>
+                         <div class="weekly-btn-text-right" data-i18n="{{price}} <br>per week"></div>
                      </div>
                  </label>
 
-                 <button id="continue-btn">Continue</button>
+                 <button id="continue-btn" data-i18n="Continue"></button>
              </div>
 
              <div class="bottom-links">
-                 <a href="#">Terms of Use</a>
-                 <a href="#">Privacy Policy</a>
-                 <a href="#">Restore</a>
+                 <a href="#" data-i18n="Terms of Use"></a>
+                 <a href="#" data-i18n="Privacy Policy"></a>
+                 <a href="#" data-i18n="Restore"></a>
              </div>
          </div>
      </div>
  </div>
 
  <script src="js/actionContinue.js"></script>
+ <script src="js/language.js"></script>
+ <script src="js/bestOfferSize.js"></script>
+ <script src="js/changeColorBestOffer.js"></script>
 </body>
 </html>

@@ -1,10 +1,59 @@
-body, html {
+:root {
+    --content-max-width: 414px;
+    --content-padding: clamp(16px, 6vw, 24px);
+    --heading-size: clamp(32px, 9vw, 42px);
+    --heading-line-height: clamp(36px, 10vw, 46px);
+    --offer-label-size: clamp(10px, 3vw, 12px);
+    --button-title-size: clamp(14px, 4.3vw, 16px);
+    --button-subtitle-size: clamp(13px, 4vw, 16px);
+    --button-price-size: clamp(13px, 4vw, 16px);
+    --bottom-link-size: 13px;
+}
+
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+html {
+    background-color: #020014;
+}
+
+body {
     font-family: 'SF Pro', sans-serif;
     font-size: 16px;
     color: #ffffff;
+    background-color: #020014;
+    display: flex;
+    justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html[lang="de"] {
+    --heading-size: clamp(30px, 8vw, 38px);
+    --heading-line-height: clamp(32px, 8.5vw, 42px);
+    --button-title-size: clamp(13px, 3.6vw, 15px);
+    --button-subtitle-size: clamp(12px, 3.4vw, 14px);
+    --button-price-size: clamp(12px, 3.4vw, 14px);
+    --bottom-link-size: 12px;
+}
+
+html[lang="fr"],
+html[lang="pt"] {
+    --heading-size: clamp(30px, 8.6vw, 40px);
+    --heading-line-height: clamp(34px, 9vw, 44px);
+    --bottom-link-size: 12px;
 }
 
 @font-face {

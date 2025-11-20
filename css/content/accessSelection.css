@@ -1,0 +1,134 @@
+.yearly-btn-text-container {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    padding-left: 20px;
+    pointer-events: none;
+    gap: 20px;
+}
+
+.yearly-btn-text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 19px;
+
+    width: 54%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.btn-text-left-title {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-text-left-subtitle {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+}
+
+.yearly-btn-text-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 88px;
+    word-wrap: break-word;
+    margin-bottom: 18px;
+    gap: 4px;
+}
+
+.best-offer {
+    display: inline-block;
+    /*max-width: 88px;*/
+    white-space: nowrap;
+
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+
+    transform-origin: left center;
+}
+.best-offer-container {
+    width: 87px;
+    overflow: hidden;
+}
+
+#yearlyAccess:not(:checked) ~ label #yearly-access-btn .best-offer {
+    color: #141131;
+}
+
+#yearlyAccess:checked ~ label #yearly-access-btn .best-offer {
+    color: #ffffff;
+}
+
+.yearly-btn-text-left.lang-ja {
+    margin-top: 14px;
+    gap: 1px;
+}
+
+.yearly-btn-text-right.lang-ja {
+    margin-bottom: 28px;
+}
+
+.btn-text-price-per-week {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+    opacity: 0.5;
+}
+
+.weekly-btn-text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 24px;
+    pointer-events: none;
+    gap: 30px;
+}
+
+.weekly-btn-text-left {
+    width: 50%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.weekly-btn-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+    opacity: 0.5;
+    max-width: 40%;
+    word-wrap: break-word;
+}
+
+#yearly-access-btn,
+#weekly-access-btn {
+    position: relative;
+}
+
+
+#yearlyAccess:checked + label img {
+    content: url("../../static/buttons/yearlyAccessActive.svg");
+}
+
+#weeklyAccess:checked + label img {
+    content: url("../../static/buttons/weeklyAccessActive.svg");
+}

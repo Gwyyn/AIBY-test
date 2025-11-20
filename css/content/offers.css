@@ -1,26 +1,37 @@
 .offers-container {
     display: flex;
     justify-content: center;
-    gap: 6px;
-    margin: 0 0 16px 0;
+    width: 100%;
+    gap: clamp(4px, 1.5vw, 8px);
+    margin: 0;
 }
+
 .offer-item {
     position: relative;
-    width: 100%;
+    flex: 1 1 0;
+    max-width: 120px;
 }
 
 .offer-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
 }
 
 .offer-label-item {
     position: absolute;
-    bottom: 12px;
+    bottom: 10px;
     left: 8px;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 2px;
-    border-radius: 2px;
+    right: 8px;
+    font-size: var(--offer-label-size);
+    line-height: 1.2;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 360px) {
+    .offer-label-item {
+        font-size: 10px;
+    }
 }
