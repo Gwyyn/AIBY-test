@@ -11,6 +11,8 @@ if (!supportedLangs.includes(lang)) {
     lang = "en";
 }
 
+document.documentElement.setAttribute("lang", lang);
+
 fetch(`static/languageAssets/${lang}.json`)
     .then(response => response.json())
     .then(dict => {

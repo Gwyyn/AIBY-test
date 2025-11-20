@@ -9,6 +9,10 @@
     gap: clamp(16px, 2vh, 32px);
 }
 
+html[lang="de"] .content {
+    margin-top: clamp(90px, 27vh, 220px);
+}
+
 #getUnlimitedAccess {
     font-weight: 900;
     font-size: var(--heading-size);
@@ -44,17 +48,29 @@
         margin-top: clamp(172px, 33vh, 250px);
         gap: clamp(14px, 1.8vh, 26px);
     }
+
+    html[lang="de"] .content {
+        margin-top: clamp(140px, 30vh, 220px);
+    }
 }
 
 @media (max-height: 740px) {
     .content {
         margin-top: clamp(172px, 26vh, 240px);
-        gap: clamp(12px, 1.6vh, 22px);
+        gap: clamp(1px, 1.6vh, 22px);
+    }
+
+    html[lang="de"] .content {
+        margin-top: clamp(130px, 20vh, 210px);
     }
 }
 
 @media (max-height: 680px) {
     .content {
         margin-top: clamp(80px, 20vh, 145px);
+    }
+
+    html[lang="de"] .content {
+        margin-top: clamp(90px, 10vh, 160px);
     }
 }
