@@ -8,7 +8,7 @@
     flex-direction: row;
     /*justify-content: space-between;*/
     padding-left: 20px;
-    pointer-events: none;
+    /*pointer-events: none;*/
     gap: 25px;
 }
 
@@ -96,7 +96,7 @@
     flex-direction: row;
     align-items: center;
     padding-left: 24px;
-    pointer-events: none;
+    /*pointer-events: none;*/
     gap: 35px;
 }
 
@@ -138,4 +138,10 @@
 #continue-btn,
 .close-btn {
     -webkit-tap-highlight-color: transparent;
+}
+
+#yearly-access-btn img,
+#weekly-access-btn img {
+    -webkit-user-drag: none;
+    user-select: none;
 }
