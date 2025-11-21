@@ -10,7 +10,7 @@
 .main-background {
     width: 100%;
     min-height: 100vh;
-    background-image: url("../../static/backgrounds/mainBackground13Iphone.svg");
+    background-image: url("../../static/backgrounds/mainBackground13IphonePNG.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -45,7 +45,7 @@
 /*iPhone 8/SE*/
 @media (width: 375px) and (height: 667px) {
     .main-background {
-        background-image: url("../../static/backgrounds/mainBackground8Iphone.svg");
+        background-image: url("../../static/backgrounds/mainBackground8IphonePNG.png");
         background-size: 100% 100%;
         background-position: center top;
         background-position-y: 0;
