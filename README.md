@@ -18,6 +18,6 @@ The page replicates a native-style subscription screen, including:
 The project is automatically deployed on:
 
 * [**GitHub Pages**](https://gwyyn.github.io/AIBY-test/)
-* [**Vercel**](https://aiby-test-g8155irgl-gwyyns-projects.vercel.app)
+* [**Vercel**](https://aiby-test.vercel.app/)
 
 Both deployments update instantly on push.
