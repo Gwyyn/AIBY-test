@@ -3,9 +3,9 @@ const bestOffer = document.querySelector(".best-offer");
 
 function updateBestOfferColor() {
     if (yearlyInput.checked) {
-        bestOffer.style.color = "#ffffff";
-    } else {
         bestOffer.style.color = "#141131";
+    } else {
+        bestOffer.style.color = "#ffffff";
     }
 }
 
