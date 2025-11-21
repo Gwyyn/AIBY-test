@@ -132,3 +132,10 @@
 #weeklyAccess:checked + label img {
     content: url("../../static/buttons/weeklyAccessActive.svg");
 }
+
+#yearly-access-btn,
+#weekly-access-btn,
+#continue-btn,
+.close-btn {
+    -webkit-tap-highlight-color: transparent;
+}
